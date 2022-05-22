@@ -11,5 +11,6 @@ public class quadradoCubo {
 
         System.out.printf("O dobro de %.0f é %.0f.%n", valor, Math.pow(valor, 2));
         System.out.printf("O triplo de %.0f é %.0f.", valor, Math.pow(valor, 3));
+        entrada.close();
     }
 }

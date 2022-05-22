@@ -12,13 +12,14 @@ public class desafioLogico {
 
         System.out.println("Você trabalhou na terça? (True ou False)");
         trabalhoTerca = entrada.nextBoolean();
-
+        
         System.out.println("Você trabalhou na quinta? (True ou False");
         trabalhoQuinta = entrada.nextBoolean();
+        entrada.close();
         
-        Boolean tv50 = true ? (trabalhoQuinta==true && trabalhoTerca==true) : false;
-        Boolean tv32 = true ? (trabalhoQuinta==false && trabalhoTerca==true || trabalhoQuinta==true && trabalhoTerca==false ):false;
-        Boolean saudavel = true ? (tv50==false && tv32==false):true;
+        Boolean tv50 = (trabalhoQuinta==true && trabalhoTerca==true);
+        Boolean tv32 = (trabalhoQuinta==false && trabalhoTerca==true || trabalhoQuinta==true && trabalhoTerca==false );
+        //Boolean saudavel = true ? (tv50==false && tv32==false):true;
 
         if (tv50) {
             System.out.println("Comprar uma televisão de 50'' e comprar sorvete.");
@@ -28,6 +29,5 @@ public class desafioLogico {
             System.out.println("Ninguém consumiu açucar, logo todos estão saudáveis");
         }
 
-        entrada.close();
     }
 }

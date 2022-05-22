@@ -10,6 +10,7 @@ public class OperadoresAtribuicao {
         c -= a;
         c *= b;
         c /= b;
+        System.out.println(c);
         
     }
 }
