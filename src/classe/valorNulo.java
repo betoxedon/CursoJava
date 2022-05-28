@@ -6,7 +6,7 @@ public class valorNulo {
 
         System.out.println(s1 + "!!!!!");
 
-        String s2 = null;
+        String s2 = "";
         System.out.println(s2.concat("!!!!!"));
     }
 }
